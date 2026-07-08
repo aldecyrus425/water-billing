@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "URYBupTU6bs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Application\\MyApp.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aldec\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.17\\microsoft.extensions.dependencyinjection.abstractions.9.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
