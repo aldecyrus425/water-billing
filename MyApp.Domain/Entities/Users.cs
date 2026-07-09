@@ -22,6 +22,9 @@ namespace MyApp.Domain.Entities
         public DateTime CreateAt { get; private set; }
         public DateTime? UpdateAt { get; private set; }
 
+        public ICollection<MeterReadings> MeterReadings = new List<MeterReadings>();
+        public ICollection<Payments> Payments = new List<Payments>();
+
         protected Users() { }
 
         public Users(string username, string passwordHash, string firstName, string? middleName, string lastName, string email, string phone, int roleId, bool isActive)

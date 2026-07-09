@@ -22,6 +22,8 @@ namespace MyApp.Domain.Entities
         public DateTime CreatedAt { get; private set; }
         public DateTime? UpdatedAt { get; private set; }
 
+        public ICollection<MeterReadings> MeterReadings { get; private set; } = new List<MeterReadings>();
+
         protected WaterMeters() { }
 
         public WaterMeters(int customerId, string meterSerialNumber, string meterBrand, string meterSize, DateOnly installationDate, string meterStatus, decimal initialReading, decimal currentReading)

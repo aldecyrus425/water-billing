@@ -25,6 +25,9 @@ namespace MyApp.Domain.Entities
         public DateTime CreatedAt { get; private set; }
         public DateTime? UpdatedAt { get; private set; }
 
+        public ICollection<WaterMeters> WaterMeters { get; private set; } = new List<WaterMeters>();
+        public ICollection<Bills> Bills { get; private set; } = new List<Bills>();
+
         protected Customers() { }
 
         public Customers(string customerNumber, string firstname, string? middlename, string lastname, string? businessName, string customerType, string phone, string address, string email, DateOnly? connectionDate, string status)

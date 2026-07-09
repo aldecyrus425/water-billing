@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyApp.Application.Features.Role.GetAllRoles
+{
+    public class GetAllRoleDTO
+    {
+        public int RoleId { get; set; }
+        public string RoleName { get; set; }
+    }
+}
