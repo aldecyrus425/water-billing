@@ -9,6 +9,7 @@ namespace MyApp.Application.Interfaces.Repository
 {
     public interface IWaterMeterRepository
     {
+        Task<WaterMeters?> getWaterMeterBySerialAsync(string serialNum);
         Task createWaterMeterAsync(WaterMeters waterMeter);
     }
 }

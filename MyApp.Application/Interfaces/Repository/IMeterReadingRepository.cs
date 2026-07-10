@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace MyApp.Application.Interfaces.Repository
 {
-    public interface IBillingRateRepository
+    public interface IMeterReadingRepository
     {
-        Task createBillingRateAsync(BillingRates rate);
+        Task createReadingAsync(MeterReadings reading);
 
+        Task<MeterReadings?> getPreviousReading(string serial);
     }
 }

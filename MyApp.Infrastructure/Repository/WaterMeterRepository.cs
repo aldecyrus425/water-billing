@@ -1,4 +1,5 @@
-﻿using MyApp.Application.Interfaces.Repository;
+﻿using Microsoft.EntityFrameworkCore;
+using MyApp.Application.Interfaces.Repository;
 using MyApp.Domain.Entities;
 using MyApp.Infrastructure.Persistence;
 using System;
@@ -21,6 +22,13 @@ namespace MyApp.Infrastructure.Repository
         {
             await _context.WaterMeters.AddAsync(waterMeter);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<WaterMeters?> getWaterMeterBySerialAsync(string serialNum)
+        {
+            return await _context.WaterMeters
+                .Include(x => x.Customers)
+                .Where(x => x.MeterSerialNumber == serialNum).FirstOrDefaultAsync();
         }
     }
 }

@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace MyApp.Application.Interfaces.Repository
 {
-    public interface IBillingRateRepository
+    public interface IBillRepository
     {
-        Task createBillingRateAsync(BillingRates rate);
-
+        Task<Bills?> getPreviousBill(string serial);
     }
 }

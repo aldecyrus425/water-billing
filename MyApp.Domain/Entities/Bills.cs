@@ -11,6 +11,8 @@ namespace MyApp.Domain.Entities
         public int BillId { get; private set; }
         public string BillNumber { get; private set; }
 
+        public string WaterMeterSerialNum { get; private set; }
+
         public int CustomerId { get; private set; }
         public Customers Customer { get; private set; }
 
