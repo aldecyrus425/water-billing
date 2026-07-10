@@ -459,23 +459,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aldec\\.nuget\\packages\\": {},
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Application\\MyApp.Application.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\source\\repos\\water-billing\\MyApp.Application\\MyApp.Application.csproj",
       "projectName": "MyApp.Application",
-      "projectPath": "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Application\\MyApp.Application.csproj",
-      "packagesPath": "C:\\Users\\aldec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Application\\obj\\",
+      "projectPath": "C:\\Users\\admin\\source\\repos\\water-billing\\MyApp.Application\\MyApp.Application.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\source\\repos\\water-billing\\MyApp.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aldec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -492,8 +492,8 @@
           "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Domain\\MyApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Domain\\MyApp.Domain.csproj"
+            "C:\\Users\\admin\\source\\repos\\water-billing\\MyApp.Domain\\MyApp.Domain.csproj": {
+              "projectPath": "C:\\Users\\admin\\source\\repos\\water-billing\\MyApp.Domain\\MyApp.Domain.csproj"
             }
           }
         }
@@ -539,6 +539,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.16, 9.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.16, 9.0.16]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[9.0.16, 9.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
