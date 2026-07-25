@@ -10,25 +10,27 @@ using System.Threading.Tasks;
 
 namespace MyApp.Infrastructure.Repository
 {
-    public class BillingRateRepository : IBillingRateRepository
+    public class PaymentRepository : IPaymentRepository
     {
         private readonly ApplicationDbContext _context;
 
-        public BillingRateRepository(ApplicationDbContext context)
+        public PaymentRepository(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        public async Task createBillingRateAsync(BillingRates rate)
+        public async Task addPaymentAsync(Payments payment)
         {
-            await _context.BillingRates.AddAsync(rate);
+            await _context.Payments.AddAsync(payment);
             await _context.SaveChangesAsync();
-
         }
 
-        public async Task<IEnumerable<BillingRates>> getBillingRates()
+        public async Task<Payments?> getPaymentByBillIdAsync(int id)
         {
-            return await _context.BillingRates.Where(x => x.IsActive).ToListAsync();
+            return await _context.Payments
+                .Where(x => x.BillId == id)
+                .OrderByDescending(x => x.CreatedAt)
+                .FirstOrDefaultAsync();
         }
     }
 }

@@ -8,11 +8,16 @@ using System.Threading.Tasks;
 
 namespace MyApp.Application.Services
 {
-    public class CustomerNumberGenerator : ICustomerNumberGenerator
+    public class NumberGenerator : INumberGenerator
     {
         public string GenerateCustomerNumber()
         {
-            return $"{GenerateDigits(4)}-{GenerateDigits(3)}-{GenerateDigits(3)}-{GenerateDigits(4)}";
+            return $"C-{GenerateDigits(4)}-{GenerateDigits(3)}-{GenerateDigits(3)}-{GenerateDigits(4)}";
+        }
+
+        public string GenerateBillNumber()
+        {
+            return $"B-{GenerateDigits(4)}-{GenerateDigits(3)}-{GenerateDigits(4)}";
         }
 
         private static string GenerateDigits(int length)
@@ -26,5 +31,7 @@ namespace MyApp.Application.Services
 
             return sb.ToString();
         }
+
+        
     }
 }

@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace MyApp.Application.Interfaces.Repository
 {
-    public interface IBillingRateRepository
+    public interface IPaymentRepository
     {
-        Task createBillingRateAsync(BillingRates rate);
-        Task<IEnumerable<BillingRates>> getBillingRates();
-
+        Task<Payments?> getPaymentByBillIdAsync(int id);
+        Task addPaymentAsync(Payments payment);
     }
 }

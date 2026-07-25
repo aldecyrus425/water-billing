@@ -9,6 +9,8 @@ namespace MyApp.Application.Interfaces.Repository
 {
     public interface IBillRepository
     {
+        Task<Bills?> getBillById(int id);
         Task<Bills?> getPreviousBill(string serial);
+        Task createBillAsync(Bills bills);
     }
 }

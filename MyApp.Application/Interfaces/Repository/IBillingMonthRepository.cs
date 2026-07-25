@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace MyApp.Application.Interfaces.Repository
 {
-    public interface IBillingRateRepository
+    public interface IBillingMonthRepository
     {
-        Task createBillingRateAsync(BillingRates rate);
-        Task<IEnumerable<BillingRates>> getBillingRates();
-
+        Task<BillingMonths?> getBillingMonthById(int Id);
     }
 }

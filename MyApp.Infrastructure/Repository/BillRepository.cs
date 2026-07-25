@@ -18,7 +18,18 @@ namespace MyApp.Infrastructure.Repository
             _context = context;
         }
 
-            public async Task<Bills?> getPreviousBill(string serial)
+        public async Task createBillAsync(Bills bills)
+        {
+            await _context.Bills.AddAsync(bills);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<Bills?> getBillById(int id)
+        {
+            return await _context.Bills.FirstOrDefaultAsync(x => x.BillId == id);
+        }
+
+        public async Task<Bills?> getPreviousBill(string serial)
             {
                 return await _context.Bills
                     .Where(x => x.WaterMeterSerialNum == serial)

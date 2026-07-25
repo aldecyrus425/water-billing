@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyApp.Application.Interfaces.Service
 {
-    public interface ICustomerNumberGenerator
+    public interface INumberGenerator
     {
         string GenerateCustomerNumber();
+        string GenerateBillNumber();
     }
 }
