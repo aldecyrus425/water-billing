@@ -10,5 +10,7 @@ namespace MyApp.Application.Interfaces.Repository
     public interface IUserRepository
     {
         Task CreateUserAsync(Users user);
+        Task<Users?> getUserByEmail(string email);
+
     }
 }
