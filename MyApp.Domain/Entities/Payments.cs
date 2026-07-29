@@ -14,6 +14,7 @@ namespace MyApp.Domain.Entities
         public string ORNumber { get; private set; }
         public DateTime PaymentDate { get; private set; }
         public decimal AmountPaid { get; private set; }
+        public decimal AmountTendered { get; private set; }
         public string PaymentMethod { get; private set; } //Gcash, Bank Transfer, Cash, etc.
         public int ReceivedBy { get; private set; }
         public Users UserReceived { get; private set; }
@@ -23,12 +24,13 @@ namespace MyApp.Domain.Entities
 
         protected Payments() { }
 
-        public Payments(int billId, string orNumber, DateTime paymentDate, decimal amountPaid, string paymentMethod, int receivedBy, string? remarks)
+        public Payments(int billId, string orNumber, DateTime paymentDate, decimal amountPaid, decimal amountTendered, string paymentMethod, int receivedBy, string? remarks)
         {
             BillId = billId;
             ORNumber = orNumber;
             PaymentDate = paymentDate;
             AmountPaid = amountPaid;
+            AmountTendered = amountTendered;
             PaymentMethod = paymentMethod;
             ReceivedBy = receivedBy;
             Remarks = remarks;

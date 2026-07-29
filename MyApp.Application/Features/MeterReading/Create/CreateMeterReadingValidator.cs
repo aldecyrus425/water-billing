@@ -12,7 +12,7 @@ namespace MyApp.Application.Features.MeterReading.Create
         public CreateMeterReadingValidator() 
         {
             RuleFor(x => x.WaterMeterSerialNumber).NotEmpty();
-            RuleFor(x => x.BillingMonth).NotEmpty();
+            RuleFor(x => x.BillingMonthId).GreaterThan(0);
             RuleFor(x => x.CurrentReading).NotEmpty();
             RuleFor(x => x.ReadingDate).Equal(DateTime.Now).NotEmpty();
             RuleFor(x => x.ReaderId).GreaterThan(0).NotEmpty();

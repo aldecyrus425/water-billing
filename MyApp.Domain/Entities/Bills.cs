@@ -36,14 +36,11 @@ namespace MyApp.Domain.Entities
 
         protected Bills() { }
 
-        public Bills(int billId, string billNumber, int customerId, Customers customer, int meterReadingId, MeterReadings meterReading, DateOnly billingDate, DateOnly dueDate, decimal previousBalance, decimal currentCharges, decimal penaltyAmount, decimal discountAmount, decimal totalAmount, string status, DateTime createdAt)
+        public Bills(string billNumber, int customerId, int meterReadingId, DateOnly billingDate, DateOnly dueDate, decimal previousBalance, decimal currentCharges, decimal penaltyAmount, decimal discountAmount, decimal totalAmount, string status)
         {
-            BillId = billId;
             BillNumber = billNumber;
             CustomerId = customerId;
-            Customer = customer;
             MeterReadingId = meterReadingId;
-            MeterReading = meterReading;
             BillingDate = billingDate;
             DueDate = dueDate;
             PreviousBalance = previousBalance;
@@ -52,7 +49,6 @@ namespace MyApp.Domain.Entities
             DiscountAmount = discountAmount;
             TotalAmount = totalAmount;
             Status = status;
-            CreatedAt = createdAt;
         }
     }
 }

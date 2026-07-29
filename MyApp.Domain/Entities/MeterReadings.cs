@@ -9,9 +9,11 @@ namespace MyApp.Domain.Entities
     public class MeterReadings
     {
         public int MeterReadingId { get; private set; }
-        public string WaterMeterSerial { get; private set; }
+        public int WaterMeterId { get; private set; }
         public WaterMeters WaterMeters { get; private set; }
-        public string BillingMonth { get; private set; }
+
+        public int BillingMonthId { get; private set; }
+        public BillingMonths BillingMonths { get; private set; }
         public decimal PreviousReading { get; private set; }
         public decimal CurrentReading { get; private set; }
         public decimal Consumption { get; private set; }
@@ -23,10 +25,10 @@ namespace MyApp.Domain.Entities
 
         protected MeterReadings() { }
 
-        public MeterReadings(string waterMeterSerial, string billingMonth, decimal previousReading, decimal currentReading, decimal consumption, int readerId, string? remarks)
+        public MeterReadings(int waterMeterId, int billingMonthId, decimal previousReading, decimal currentReading, decimal consumption, int readerId, string? remarks)
         {
-            WaterMeterSerial = waterMeterSerial;
-            BillingMonth = billingMonth;
+            WaterMeterId = waterMeterId;
+            BillingMonthId = billingMonthId;
             PreviousReading = previousReading;
             CurrentReading = currentReading;
             Consumption = consumption;

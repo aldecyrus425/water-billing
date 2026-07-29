@@ -3,6 +3,7 @@ using MyApp.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -115,6 +116,17 @@ namespace MyApp.Infrastructure.Persistence
                 entity.HasKey(x => x.PaymentId);
             });
 
+            modelBuilder.Entity<BillingMonths>(entity =>
+            {
+                entity.HasKey(x => x.BillingMonthId);
+
+                entity.HasMany(x => x.MeterReadings)
+                .WithOne(x => x.BillingMonths)
+                .HasForeignKey(x => x.BillingMonthId)
+                .OnDelete(DeleteBehavior.Restrict);
+            });
+
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -129,5 +141,6 @@ namespace MyApp.Infrastructure.Persistence
         public DbSet<Users> Users {  get; set; }
         public DbSet<WaterMeterReplacements> WaterMeterReplacement { get; set; }
         public DbSet<WaterMeters> WaterMeters { get; set; }
+        public DbSet<BillingMonths> BillingMonths { get; set; }
     }
 }
