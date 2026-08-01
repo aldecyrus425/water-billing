@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "MyApp.Api.Controllers.AuthController",
+    "Method": "Authenticate",
+    "RelativePath": "api/auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "MyApp.Application.Features.Authenticate.AuthenticateCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

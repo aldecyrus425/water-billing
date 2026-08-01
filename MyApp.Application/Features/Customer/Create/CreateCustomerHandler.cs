@@ -14,9 +14,9 @@ namespace MyApp.Application.Features.Customer.Create
     public class CreateCustomerHandler : IRequestHandler<CreateCustomerCommand, GenericResponse<string>>
     {
         private readonly ICustomerRepository _customerRepository;
-        private readonly ICustomerNumberGenerator _numberGenerator;
+        private readonly INumberGenerator _numberGenerator;
 
-        public CreateCustomerHandler(ICustomerRepository customerRepository, ICustomerNumberGenerator numberGenerator)
+        public CreateCustomerHandler(ICustomerRepository customerRepository, INumberGenerator numberGenerator)
         {
             _customerRepository = customerRepository;
             _numberGenerator = numberGenerator;

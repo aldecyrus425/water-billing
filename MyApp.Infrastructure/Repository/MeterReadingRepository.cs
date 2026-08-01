@@ -28,7 +28,7 @@ namespace MyApp.Infrastructure.Repository
         public async Task<MeterReadings?> getPreviousReading(string serial)
         {
             return await _context.MeterReadings
-                .Where(x => x.WaterMeterSerial == serial)
+                .Where(x => x.WaterMeters.MeterSerialNumber == serial)
                 .OrderByDescending(x => x.ReadingDate)
                 .FirstOrDefaultAsync();
         }

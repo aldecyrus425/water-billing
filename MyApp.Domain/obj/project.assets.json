@@ -2,7 +2,7 @@
   "version": 4,
   "targets": {
     "net9.0": {
-      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.17": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.18": {
         "type": "package",
         "compile": {
           "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -21,10 +21,10 @@
     }
   },
   "libraries": {
-    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.17": {
-      "sha512": "/Oy6N+l6aBqKKnjpBhH2MSzzKV+UbjDELuk/OkwJW0auMqWZm14aK7n+QGjscH7JosoI1ChTWf4utUGEA6m2RA==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.18": {
+      "sha512": "eSUdaLUP+pj1J7SpCsUYQP6dNk0w9g0KGu4ovPYBnlfqomW1u+1fF8ZIjMVuHY6Z3p30yL0SxND9JTS6i3NolQ==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.17",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.18",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -46,7 +46,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.9.0.17.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.18.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -54,27 +54,27 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.17"
+      "Microsoft.Extensions.DependencyInjection.Abstractions >= 9.0.18"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "C:\\Users\\aldec\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\source\\repos\\water-billing\\MyApp.Domain\\MyApp.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Domain\\MyApp.Domain.csproj",
       "projectName": "MyApp.Domain",
-      "projectPath": "C:\\Users\\admin\\source\\repos\\water-billing\\MyApp.Domain\\MyApp.Domain.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\source\\repos\\water-billing\\MyApp.Domain\\obj\\",
+      "projectPath": "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Domain\\MyApp.Domain.csproj",
+      "packagesPath": "C:\\Users\\aldec\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aldec\\source\\repos\\Water Billing System\\MyApp.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aldec\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -112,7 +112,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
-            "version": "[9.0.17, )"
+            "version": "[9.0.18, )"
           }
         },
         "imports": [
@@ -126,20 +126,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[9.0.16, 9.0.16]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[9.0.16, 9.0.16]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[9.0.16, 9.0.16]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
